@@ -41,7 +41,10 @@ This API provides endpoints to manage tasks for registered users. It includes au
 - **Authorization Header:** Bearer token (JWT)
 - **Request Body:** JSON
   - `title` (string, required): Task title
-  - `description` (string, optional): Task description
+  - `description` (string, required): Task description
+  - `dueDate` (string, required): Due date of the task
+  - `priority` (string, optional): Priority of the task (default: 'Medium')
+  - `status` (string, optional): Status of the task (default: 'Incomplete')
 - **Response:**
   - Created task object
 - **Status Codes:**
